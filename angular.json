@@ -15,7 +15,12 @@
             "tsConfig": "projects/angular-query/tsconfig.lib.json",
             "project": "projects/angular-query/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-query/tsconfig.lib.prod.json"
+            }
+          }
+},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
