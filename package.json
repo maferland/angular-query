@@ -1,6 +1,15 @@
 {
-  "name": "base-angular-query",
-  "version": "0.0.0",
+  "name": "angular-query",
+  "version": "1.0.0-semantic-release",
+  "description": "Performant and powerful remote data synchronization for Angular",
+  "author": "tannerlinsley",
+  "license": "MIT",
+  "repository": "TanStack/angular-query",
+  "homepage": "https://github.com/TanStack/angular-query#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/tannerlinsley"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +18,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "release": {
+    "branches": [
+      "1.x",
+      "master",
+      "beta"
+    ]
+  },
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
