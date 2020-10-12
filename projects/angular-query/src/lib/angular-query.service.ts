@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AngularQueryService {
+  constructor() {}
 
-  constructor() { }
+  public useQuery() {
+    return new Subject();
+  }
 }
